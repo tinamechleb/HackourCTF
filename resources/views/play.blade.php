@@ -12,8 +12,8 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #262626;
-                color: #ffffff;
+                background-color: #fff;
+                color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
@@ -36,11 +36,8 @@
 
             .top-right {
                 position: absolute;
-                right: 15px;
-                top: 0;
-                display: inline-flex;
-                align-items: center;
-                height: 66px;
+                right: 10px;
+                top: 18px;
             }
 
             .content {
@@ -52,28 +49,13 @@
             }
 
             .links > a {
-                color: #ffffff;
-                padding: 6px 25px;
+                color: #636b6f;
+                padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
-            }
-
-            .register-button {
-                border: 2px solid #ffffff;
-                border-radius: 5px;
-                margin-left: 5px;
-            }
-
-            .links > a:hover {
-                color: #007D18;
-                border-bottom: 3px solid #007D18;
-            }
-
-            .register-button:hover {
-                border: 2px solid #007D18;
             }
 
             .m-b-md {
@@ -85,19 +67,13 @@
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
-                <a href="{{url('/submitflag') }}">Submit a Flag</a>
-                <a href="{{url('/') }}">Home</a>
-                <a href="{{url('/play') }}">Play</a>
-                <a href="{{url('/about') }}">About</a>
-                <a href="{{url('/faq') }}">FAQ</a>
-                <a href="{{url('/contact') }}">Contact</a>
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="register-button">Sign Up</a>
+                            <a href="{{ route('register') }}">Register</a>
                         @endif
                     @endauth
                 </div>
@@ -105,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Hackour CTF Homepage
+                    Play
                 </div>
             </div>
         </div>

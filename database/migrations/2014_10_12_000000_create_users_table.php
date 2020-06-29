@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->integer('points');
-            $table->integer('rank');
+            $table->integer('rank')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
