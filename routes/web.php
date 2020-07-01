@@ -20,6 +20,7 @@ Route::get('/', function () {
 Route::get('/submitflag', function () {
     return view('submitflag');
 });
+// Route::post('/checkingFlag',)
 
 Route::get('/play', function () {
     return view('play');
