@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Flag;
 use Illuminate\Http\Request;
+use App\Http\Requests\ValidateFlagRequest;
 
 class FlagController extends Controller
 {
@@ -83,11 +84,9 @@ class FlagController extends Controller
         //
     }
 
-    public function checkingFlag(Request $request)
+    public function checkingFlag(ValidateFlagRequest $request)
     {
-        $flag = new Flag();
-        $flag->flag = $request->flag;
-        if(Flag::where('flag',$flag->flag)->exists()) {
+        if(Flag::where('flag',$request->input('flag'))->exists()) {
             return true;
         }
         else {

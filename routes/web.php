@@ -20,7 +20,8 @@ Route::get('/', function () {
 Route::get('/submitflag', function () {
     return view('submitflag');
 });
-// Route::post('/checkingFlag',)
+
+Route::post('/submitflag', 'FlagController@checkingFlag')->name('flag.submit');
 
 Route::get('/play', function () {
     return view('play');

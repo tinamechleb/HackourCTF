@@ -117,6 +117,11 @@
                 background-color: #005110;
                 color: #ffffff;
             }
+
+            .flag-invalid-feedback {
+                font-size: 20%;
+                color: #e3342f;
+            }
         </style>
     </head>
     <body>
