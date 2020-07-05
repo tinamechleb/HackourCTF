@@ -165,29 +165,41 @@
             .terms-and-conditions {
                 padding-top: 10px;
             }
+            .play-page {
+                margin: 0;
+                text-align: left;
+            }
+            .play-game-title a {
+                font-size: 20px;
+                text-decoration: none;
+                color: #ffffff;
+            }
+            .play-game-title a:hover {
+                color: #119308;
+            }
         </style>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
                 <div class="top-right links">
-                <a href="{{url('/submitflag') }}">Submit a Flag</a>
-                <a href="{{url('/') }}">Home</a>
-                <a href="{{url('/play') }}">Play</a>
-                <a href="{{url('/about') }}">About</a>
-                <a href="{{url('/faq') }}">FAQ</a>
-                <a href="{{url('/contact') }}">Contact</a>
-                @if (Route::has('login'))
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+                    <a href="{{url('/submitflag') }}">Submit a Flag</a>
+                    <a href="{{url('/') }}">Home</a>
+                    <a href="{{url('/play') }}">Play</a>
+                    <a href="{{url('/about') }}">About</a>
+                    <a href="{{url('/faq') }}">FAQ</a>
+                    <a href="{{url('/contact') }}">Contact</a>
+                    @if (Route::has('login'))
+                        @auth
+                            <a href="{{ url('/home') }}">Home</a>
+                            @else
+                                <a href="{{ route('login') }}">Login</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="register-button">Sign Up</a>
-                        @endif
-                    @endauth
+                            @if (Route::has('register'))
+                                <a href="{{ route('register') }}" class="register-button">Sign Up</a>
+                            @endif
+                        @endauth
                 </div>
-            @endif
+                    @endif
 
             @yield('page')
 

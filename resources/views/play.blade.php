@@ -1,9 +1,9 @@
 @extends('layouts.layout')
 
 @section('page')
-<div class="content">
-    <div class="title m-b-md">
-        Play
+<div class="content play-page">
+    <div class="play-game-title">
+        <a href="/play/game1">Game 1</a>
     </div>
 </div>
 @endsection
