@@ -15,6 +15,8 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Nova+Mono&display=swap" rel="stylesheet">         <!-- Styles -->
+
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -98,6 +100,51 @@
             .container {
                 height: 50px;
             }
+            footer{
+                margin-top: 25%;
+                background-color: #262626;
+                text-align: center;
+                padding: 2%;
+                font-family: 'Nova Mono', monospace;
+            }
+            footer a {
+                text-decoration: none;
+                color: #ffffff;
+            }
+            footer a:hover {
+                text-decoration: underline;
+                color: #119308;
+            }
+            .footer-grid {
+                display: grid;
+                grid-template-columns: 33.33% 33.33% 33.33%;
+            }
+            .footer-column {
+                padding: 9%;
+            }
+            .footer-column h2 {
+                color: #119308;
+                font-weight: bold;
+            }
+            .join-now-text {
+                padding-bottom: 6.5%;
+            }
+            .start-hacking-button {
+                border: 2px solid #119308;
+                border-radius: 7px;
+                padding: 10px;
+                font-family: 'Gruppo', 'Nova Mono', monospace;
+                font-size: 18px
+            }
+            .start-hacking-button:hover {
+                background-color: #119308;
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 20px;
+            }
+            .terms-and-conditions {
+                padding-top: 10px;
+            }
         </style>
 </head>
 <body>
@@ -167,7 +214,29 @@
         </main>
     </div>
         <footer>
-            footer
+            <div>
+                <img src="/img/hackourCTF-logo.svg" alt="hackour ctf logo"/>
+            </div>
+            <div class="footer-grid">
+                <div class="footer-column footer-column-about">
+                    <h2>About Hackour CTF</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio tristique neque gravida cursus praesent. Nulla gravida nunc tristique eget mattis orci. Vitae accumsan tellus iaculis id a amet cursus auctor.</p>
+                </div>
+                <div class="footer-column footer-column-join">
+                    <h2>Join Now</h2>
+                    <p class="join-now-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio tristique neque praesent. </p>
+                    <a href="{{ route('register') }}" class="start-hacking-button">Start Hacking</a>
+                </div>
+                <div class="footer-column footer-column-contact">
+                    <h2>Contact</h2>
+                    <p>hackour_ctf@protonmail.com</p>
+                    <p>tristique neque gravida cursus praesent. Nulla gravida nunc tristique eget mattis orci. Vitae accumsan tellus iaculis id a amet cursus auctor.</p>
+                </div>
+            </div>
+            <div>
+                <div class="copyrights">Copyright © Hackour CTF 2020<div/>
+                <div class="terms-and-conditions"><a href="https://www.termsandconditionsgenerator.com/live.php?token=ROi0YyPYoXOYIA8STQ9V6QJBhZ2c6A7D">Terms & Conditions</a> | <a href="https://www.privacypolicygenerator.info/live.php?token=f9LOSF5m7UIAGj3B8Ge72PigJhk0GnHn">Privacy Policy</a></div>
+            <div>
         </footer>
 </body>
 </html>
