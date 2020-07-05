@@ -87,7 +87,7 @@ class FlagController extends Controller
     public function checkingFlag(ValidateFlagRequest $request)
     {
         if(Flag::where('flag',$request->input('flag'))->exists()) {
-            return true;
+            return "Congrats! You found a flag.";
         }
         else {
             return false;

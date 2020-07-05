@@ -22,12 +22,10 @@
                 color: #119308;
             }
             .submitflag-card {
-                background-color: #262626;
                 display: grid;
                 justify-content: center;
                 font-family: 'Gruppo', monospace;
                 font-weight: bold;
-                box-shadow: -10px -10px 20px #888888;
             }
 
             .submitflag-label {
@@ -76,6 +74,18 @@
                 position: fixed;
                 bottom: 0;
                 right: 0;
+                background-color: #262626;
+                box-shadow: -10px -10px 20px #888888;
+                display: grid;
+                justify-content: center;
+                text-align: center;
+                padding-bottom: 10px;
+            }
+            .submitflag-box a {
+                color: #ffffff;
+            }
+            .submitflag-box a:hover {
+                color: #007D18;
             }
         </style>
     </head>
@@ -100,6 +110,7 @@
                     </button>
                 </div> 
             </form>
+            <a href="/play">Play another game</a>
         </div>
     </body>
 </html>
