@@ -19,13 +19,13 @@ Route::get('/', function () {
 
 Route::get('/submitflag', function () {
     return view('submitflag');
-});
+})->middleware('auth');
 
 Route::post('/submitflag', 'FlagController@checkingFlag')->name('flag.submit');
 
 Route::get('/play', function () {
     return view('play');
-});
+})->middleware('auth');
 
 Route::get('/about', function () {
     return view('about');
@@ -43,6 +43,6 @@ Auth::routes();
 
 Route::get('/play/game1', function () {
     return view('game1');
-});
+})->middleware('auth');
 
 Route::get('/home', 'HomeController@index')->name('home');
