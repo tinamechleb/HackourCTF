@@ -98,7 +98,7 @@
                 <label for="flag" class=" text-md-right submitflag-label">Found a $FLAG$?</label>
 
                 <div class="submitflag-grid">
-                    <input id="flag" type="text" class="submitflag-input" name="flag" placeholder="$FLAG$" required>
+                    <input id="flag" type="text" class="submitflag-input" name="flag" placeholder="$FLAG$" autocomplete="off" required>
                     
                     @error('flag')
                         <span class="flag-invalid-feedback" role="alert">
