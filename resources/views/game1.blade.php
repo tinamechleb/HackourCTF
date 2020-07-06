@@ -16,7 +16,7 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
-                background: url('/img/game1-background.svg')
+                background: url('/img/game1-background.svg');
             }
             h2 span{
                 color: #119308;
