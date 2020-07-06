@@ -177,11 +177,20 @@
             .play-game-title a:hover {
                 color: #119308;
             }
+            .navbar {
+                overflow: hidden;
+                transition: 0.4s;
+                z-index: 99; 
+                position: fixed;
+                width: 100%;
+                justify-content: flex-end;
+                left: 0.5%;
+            }
         </style>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-                <div class="top-right links">
+                <div class="top-right links navbar" id="navbar">
                     <a href="{{url('/submitflag') }}">Submit a Flag</a>
                     <a href="{{url('/') }}">Home</a>
                     <a href="{{url('/play') }}">Play</a>
@@ -229,5 +238,16 @@
                 <div class="terms-and-conditions"><a href="https://www.termsandconditionsgenerator.com/live.php?token=ROi0YyPYoXOYIA8STQ9V6QJBhZ2c6A7D">Terms & Conditions</a> | <a href="https://www.privacypolicygenerator.info/live.php?token=f9LOSF5m7UIAGj3B8Ge72PigJhk0GnHn">Privacy Policy</a></div>
             <div>
         </footer>
+            <script>
+                window.onscroll = function() {scrollFunction()};
+
+                function scrollFunction() {
+                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                    document.getElementById("navbar").style.backgroundColor = "#262626";
+                } else {
+                    document.getElementById("navbar").style.backgroundColor = "#00000000";
+                }
+            }
+            </script>
     </body>
 </html>
