@@ -45,4 +45,8 @@ Route::get('/play/game1', function () {
     return view('game1');
 })->middleware('auth');
 
+Route::get('/play/game2', function () {
+    return view('game2');
+})->middleware('auth');
+
 Route::get('/home', 'HomeController@index')->name('home');

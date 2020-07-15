@@ -154,7 +154,8 @@
                 border-radius: 7px;
                 padding: 10px;
                 font-family: 'Gruppo', 'Nova Mono', monospace;
-                font-size: 18px
+                font-size: 18px;
+                transition: 0.3s;
             }
             .start-hacking-button:hover {
                 background-color: #119308;
