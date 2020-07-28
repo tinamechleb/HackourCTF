@@ -13,7 +13,7 @@
             html, body {
                 background-color: #353535;
                 color: #ffffff;
-                font-family: 'Nunito', sans-serif;
+                font-family: 'Gruppo', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
@@ -40,6 +40,7 @@
                 display: inline-flex;
                 align-items: center;
                 height: 66px;
+                font-family: "Nunito", sans-serif;
             }
 
             .content {
@@ -88,7 +89,7 @@
             .content {
                 margin-bottom: 30px;
                 margin-top: 80px;
-                min-height: 70vh;
+                min-height: 83vh;
                 align-items: center;
                 display: flex;
                 justify-content: center;
@@ -191,6 +192,12 @@
                 font-family: 'Gruppo', 'Nova Mono', monospace;
                 font-size: 18px;
                 transition: 0.3s;
+                height: min-content;
+                width: max-content;
+                background-color: #00000000;
+                color: #fff;
+                justify-self: center;
+                align-self: center;
             }
             .start-hacking-button:hover {
                 background-color: #119308;
@@ -232,7 +239,7 @@
                 margin-top: 66px;
             }
             .top-section {
-                height: 30em;
+                height: 90vh;
             }
             .reasons-to-join {
                 height: 30em;
@@ -271,11 +278,41 @@
                 text-decoration: none;
                 font-size: 20px;
             }
+            .contact-form {
+                background-color: #262626;
+                display: grid;
+                padding: 0.5em;
+                height: 5em;
+            }
+            .contact-input {
+                max-height: 2.5em;
+                border-radius: 5px;
+                padding-left: 0.5em;
+            }
+            .contact-message {
+                border-radius: 5px;
+                padding: 0.5em;
+            }
+            .primary-color {
+                color: #119308;
+            }
+            .logo-container{
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
+            .logo {
+                height: 66px;
+            }
         </style>
     </head>
     <body>
         <div class="flex-center position-ref">
+                
                 <div class="top-right links navbar" id="navbar">
+                <div class="logo-container">
+                    <img src="/img/hackourCTF-logo.svg" class="logo" alt="hackour ctf logo"/>
+                </div>
                     <a href="{{url('/submitflag') }}">Submit a Flag</a>
                     <a href="{{url('/') }}">Home</a>
                     <a href="{{url('/play') }}">Play</a>

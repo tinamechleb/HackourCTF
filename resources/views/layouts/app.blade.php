@@ -146,6 +146,38 @@
             .terms-and-conditions {
                 padding-top: 10px;
             }
+            .btn-primary {
+                color: #fff;
+                background-color: #119308;
+                border-color: #119308;
+            }
+            .btn-primary:hover {
+                color: #fff;
+                background-color: #0f8207;
+                border-color: #0f8207;
+            }
+            .btn-link {
+                color: #119308;
+            }
+            .btn-link:hover {
+                color: #0f8207;
+                text-decoration: underline;
+            }
+            .btn-primary:active, .btn-primary:focus {
+                color: #fff;
+                background-color: #0f8207;
+                border-color: #0f8207;
+                border: 0
+            }
+            .logo-container{
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
+            .logo {
+                height: 66px;
+            }
+            
         </style>
 </head>
 <body>
@@ -162,12 +194,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
-                    <div class="top-right links">
+                    <div class="top-right links navbar" id="navbar">
+                        <div class="logo-container">
+                            <img src="/img/hackourCTF-logo.svg" class="logo" alt="hackour ctf logo"/>
+                        </div>
                         <a href="{{url('/submitflag') }}">Submit a Flag</a>
                         <a href="{{url('/') }}">Home</a>
                         <a href="{{url('/play') }}">Play</a>
