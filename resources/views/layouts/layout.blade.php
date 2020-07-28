@@ -44,6 +44,7 @@
 
             .content {
                 text-align: center;
+                width: 100%;
             }
 
             .title {
@@ -81,6 +82,40 @@
 
             .submitflag-card {
                 background-color: #262626;
+                width: 400px;
+            }
+
+            .content {
+                margin-bottom: 30px;
+                margin-top: 80px;
+                min-height: 70vh;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .play-grid {
+                padding: 150px 0;
+                display: grid;
+                grid-template-columns: 100%;
+                width: 96vw;
+            }
+
+            .play-game-back {
+                background-color: #262626;
+                width: 80%;
+                border-radius: 8px;
+                margin-bottom: 10px;
+                align-items: center;
+                display: flex;
+                justify-self: center;
+                padding: 0.7em 1em;
+                justify-content: space-between;
+            }
+
+            .play-game-back:hover {
+                background-color: #007D18;
+                transition: 0.2s;
             }
 
             .submitflag-label {
@@ -170,13 +205,14 @@
                 margin: 0;
                 text-align: left;
             }
+
             .play-game-title a {
                 font-size: 20px;
                 text-decoration: none;
                 color: #ffffff;
             }
             .play-game-title a:hover {
-                color: #119308;
+                font-weight: bold;
             }
             .navbar {
                 overflow: hidden;
@@ -188,16 +224,63 @@
                 left: -2%;
                 padding-right: 30px;
             }
+            .join-section {
+                height: 30em;
+            }
+            .homepage {
+                width: 100%;
+                margin-top: 66px;
+            }
+            .top-section {
+                height: 30em;
+            }
+            .reasons-to-join {
+                height: 30em;
+                text-align: center;
+                background-color: #262626;
+            }
+            .reasons-title {
+                text-align: center;
+                color: #119308;
+                font-size: 4vw;
+                font-family: 'Nova Mono', monospace;
+                padding: 1em 0;
+            }
+            .reasons-grid {
+                display: grid;
+                grid-template-columns: 25% 25% 25% 25%;
+                margin-bottom: 1.5em;
+            }
+            .reasons-content {
+                padding: 1em;
+            }
+            .join-now-button {
+                border: 2px solid #119308;
+                border-radius: 7px;
+                padding: 10px;
+                font-family: 'Gruppo', 'Nova Mono', monospace;
+                font-size: 18px;
+                transition: 0.3s;
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .join-now-button:hover {
+                background-color: #119308;
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 20px;
+            }
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref">
                 <div class="top-right links navbar" id="navbar">
                     <a href="{{url('/submitflag') }}">Submit a Flag</a>
                     <a href="{{url('/') }}">Home</a>
                     <a href="{{url('/play') }}">Play</a>
-                    <a href="{{url('/about') }}">About</a>
-                    <a href="{{url('/faq') }}">FAQ</a>
+                    <!-- <a href="{{url('/about') }}">About</a>
+                    <a href="{{url('/faq') }}">FAQ</a> -->
                     <a href="{{url('/contact') }}">Contact</a>
                     @if (Route::has('login'))
                         @auth

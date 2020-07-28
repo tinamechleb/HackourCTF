@@ -55,6 +55,7 @@
 
             .content {
                 text-align: center;
+                width: 100%;
             }
 
             .title {
@@ -170,8 +171,8 @@
                         <a href="{{url('/submitflag') }}">Submit a Flag</a>
                         <a href="{{url('/') }}">Home</a>
                         <a href="{{url('/play') }}">Play</a>
-                        <a href="{{url('/about') }}">About</a>
-                        <a href="{{url('/faq') }}">FAQ</a>
+                        <!-- <a href="{{url('/about') }}">About</a>
+                        <a href="{{url('/faq') }}">FAQ</a> -->
                         <a href="{{url('/contact') }}">Contact</a>
                     
                         <!-- Authentication Links -->

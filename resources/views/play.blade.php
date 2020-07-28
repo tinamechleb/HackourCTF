@@ -3,8 +3,28 @@
 @section('page')
 <div class="content play-page">
     <div class="play-game-title">
-        <a target="_blank" href="/play/game1">Game 1</a>
-        <a target="_blank" href="/play/game2">Game 2</a>
+        <div class="play-grid">
+            <div class="play-game-back">
+                <a target="_blank" href="/play/game1">Game 1</a>
+                <div>Flags: 1</div>
+            </div>
+            <div class="play-game-back" target="_blank" href="/play/game2">
+                <a target="_blank" href="/play/game2">Game 2</a>
+                <div>Flags: 2</div>
+            </div>
+            <div class="play-game-back" target="_blank" href="/play/game2">
+                <a target="_blank" href="/play/game2">Game 2</a>
+                <div>Flags: 2</div>
+            </div>
+            <div class="play-game-back" target="_blank" href="/play/game2">
+                <a target="_blank" href="/play/game2">Game 2</a>
+                <div>Flags: 2</div>
+            </div>
+            <div class="play-game-back" target="_blank" href="/play/game2">
+                <a target="_blank" href="/play/game2">Game 2</a>
+                <div>Flags: 2</div>
+            </div>
+        </div>
     </div>
 </div>
 @endsection

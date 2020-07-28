@@ -41,6 +41,10 @@ Route::get('/contact', function () {
 
 Auth::routes();
 
+Route::get('/hint/5468354512354687651', function () {
+    return view('hint1');
+})->middleware('auth');
+
 Route::get('/play/game1', function () {
     return view('game1');
 })->middleware('auth');
