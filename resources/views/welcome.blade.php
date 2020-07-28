@@ -3,6 +3,9 @@
 @section('page')
     <div class="homepage">
         <div class="top-section">
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
             Hackour CTF Homepage
         </div>
         <div class="reasons-to-join">

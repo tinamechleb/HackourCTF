@@ -8,7 +8,11 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Nova+Mono&display=swap" rel="stylesheet">         <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Nova+Mono&display=swap" rel="stylesheet">         
+        
+        <!-- Styles -->
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/styles.scss') }}">
+
         <style>
             html, body {
                 background-color: #353535;
@@ -17,6 +21,7 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+                font-size: 17px;
             }
 
             .full-height {
@@ -240,11 +245,12 @@
             }
             .top-section {
                 height: 90vh;
+                background-color: #262626;
             }
             .reasons-to-join {
                 height: 30em;
                 text-align: center;
-                background-color: #262626;
+                background-color: #313131
             }
             .reasons-title {
                 text-align: center;
@@ -304,10 +310,13 @@
             .logo {
                 height: 66px;
             }
+            .bk {
+                background-color: #262626;
+            }
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref">
+        <div class="flex-center position-ref bk">
                 
                 <div class="top-right links navbar" id="navbar">
                 <div class="logo-container">
