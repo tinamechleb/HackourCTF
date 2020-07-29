@@ -244,13 +244,17 @@
                 margin-top: 66px;
             }
             .top-section {
-                height: 90vh;
+                height: 100vh;
                 background-color: #262626;
+                position: absolute;
+                width: 100%;
+                top: 0;
             }
             .reasons-to-join {
                 height: 30em;
                 text-align: center;
-                background-color: #313131
+                background-color: #313131;
+                margin-top: 89vh;
             }
             .reasons-title {
                 text-align: center;

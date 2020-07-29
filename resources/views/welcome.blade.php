@@ -6,7 +6,9 @@
             <div id='stars'></div>
             <div id='stars2'></div>
             <div id='stars3'></div>
-            Hackour CTF Homepage
+            <div class="h1">
+                Hackour CTF
+            </div>
         </div>
         <div class="reasons-to-join">
             <div class="reasons-title">Why you should join us</div> 
@@ -17,9 +19,6 @@
                 <div class="reasons-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quidem tempora quasi earum iste voluptatum magni, fugiat error culpa. Laborum animi officia architecto repudiandae voluptatum eius enim rem at labore!</div>
             </div>
             <a href="{{ route('register') }}" class="join-now-button">Join Now</a>
-        </div>
-        <div class="join-section">
-            Join now
         </div>
     </div>
 @endsection
